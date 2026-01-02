@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unearthed Wisconsin</title>
+
+  <!-- ✅ PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+
+  <!-- React (CDN) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- ✅ YOUR ORIGINAL STYLES (UNCHANGED) -->
+  <style>
+    /* YOUR ENTIRE STYLE BLOCK HERE — NO CHANGES */
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- ✅ YOUR ENTIRE APP SCRIPT (UNCHANGED) -->
+  <script type="text/babel">
+    /* YOUR ENTIRE REACT APP CODE HERE — NO CHANGES */
+  </script>
+
+  <!-- ✅ PWA SERVICE WORKER REGISTER -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./service-worker.js");
+    }
+  </script>
+</body>
+</html>
